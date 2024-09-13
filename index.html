@@ -7,9 +7,15 @@
     <title>Payment for example</title>
     <script src="https://kit.fontawesome.com/920a4bd79c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="content p-5">
-        <div class="row">
+<body >
+    <div class="container my-4 border w-100">
+      <div class="row col-md-auto bg-light border-bottom">
+        <h1 class="p-3">Payment for example</h1>
+      </div>
+      <div class="alert alert-danger mt-3" role="alert">
+        Some fields are missing
+      </div>
+        <div class="row p-3">
           <form class="row g-3">
             <div class="col-md-5">
               <label class="form-label">Card #</label>
@@ -52,14 +58,11 @@
               <label class="form-label">Postal Code</label>
               <input type="text" class="form-control">
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
           </form>
           <form class="row g-3 justify-content-between">
             <div class="col-md-4 ">
-              <label>We accept:</label><br>
-              <div class="bg-secondary p-1 m-1">
+              <label class="mb-2">We accept:</label><br>
+              <div class="bg-secondary p-1 d-inline">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
               <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
@@ -83,8 +86,16 @@
               <textarea class="form-control" rows="3"></textarea>
               <footer class="text-secondary">Add any notes here.</footer>
             </div>
-
           </form>
+        </div><br>
+            <div class="row col-md-auto bg-light border-top">
+              <div class="d-flex justify-content-end p-2">
+              <button type="button" class="btn btn-secondary btn-sm me-2">Cancel</button>
+              <button type="button" class="btn btn-primary btn-sm">Send</button>
+            </div>
+          </div>
+        </div>
+       </div>
     </div>
 </div>
 </body>
